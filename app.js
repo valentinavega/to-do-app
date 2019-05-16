@@ -18,7 +18,14 @@ function onReady() {
   // set the input's type to checkbox
   checkbox.type = "checkbox";
 
+  // add delete button
+    let deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
 
+     deleteButton.addEventListener("click", function(event) {
+        toDoList.removeChild(this.parentElement);
+    });
+    
   newLi.textContent = title;
   newLi.appendChild(checkbox);
   newLi.appendChild(deleteButton);
@@ -27,13 +34,6 @@ function onReady() {
      });
 }
 
-// add delete button
-  let deleteButton = document.createElement("button");
-      deleteButton.textContent = "Delete";
-
-   deleteButton.addEventListener("click", function(event) {
-      toDoList.removeChild(this.parentElement);
-  });
 
 window.onload = function() {
   onReady();
