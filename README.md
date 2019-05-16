@@ -1,3 +1,3 @@
 # to-do-app
 
-Simple to-do app created using Javascript.
+Simple to-do app created using JavaScript.
