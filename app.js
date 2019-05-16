@@ -25,7 +25,7 @@ function onReady() {
      deleteButton.addEventListener("click", function(event) {
         toDoList.removeChild(this.parentElement);
     });
-    
+
   newLi.textContent = title;
   newLi.appendChild(checkbox);
   newLi.appendChild(deleteButton);
@@ -33,7 +33,6 @@ function onReady() {
   newToDoText.value = '';
      });
 }
-
 
 window.onload = function() {
   onReady();
