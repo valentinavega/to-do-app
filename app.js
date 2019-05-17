@@ -17,6 +17,9 @@ addToDoForm.addEventListener('submit', event => {
   createNewToDo();
 });
 
+  renderTheUI();
+}
+
 window.onload = function() {
   onReady();
 };
